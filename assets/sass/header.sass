@@ -4,7 +4,7 @@ header
   max-width: 100%
   height: 450px
   background:
-    color: rgba(46, 204, 113,1.0)
+    color: #5fcf80
     position: center
     repeat:no-repeat
     size: cover
@@ -13,18 +13,22 @@ header
     padding: 0
     margin: 0
     width: 100%
-    height: 70px
+    height: 80px
     background-color: white
     position: fixed
+    box-shadow: 0px 2px 11px #7f8c8d
 
     .logo
       margin:
-        top: 10px
+        top: 20px
         left: 10px
       float: left
-      height: 50px
-      width: 50px
-      background-color: pink
+      height: 40px
+      width: 250px
+      background:
+        image: url(../img/logo-nav.jpg)
+        size: cover
+        repeat:no-repeat
 
     nav
       float: right
@@ -38,19 +42,22 @@ header
           size:14px
           weight: 600
         margin-left: 20px
-        color: #95a5a6
+        color: #2c3e50
 
         &:hover
-          color: #2c3e50
+          color: black
 
   .home
     padding-top: 70px
 
     .big-logo
-      height: 80px
-      width: 80px
-      background-color: pink
+      height: 150px
+      width: 150px
+      background:
+        image: url(../img/logo.jpg)
+        size: contain
       margin: 50px auto auto auto
+      border-radius: 50%
 
     .title
       font-size: 48px
