@@ -17,6 +17,7 @@ header
     background-color: white
     position: fixed
     box-shadow: 0px 2px 11px #7f8c8d
+    z-index: 2
 
     .logo
       margin:
@@ -69,7 +70,7 @@ header
       letter-spacing: 15px
 
 //Menu for Mobile phone
-@media(max-width: 550px)
+@media(max-width: 790px)
   header
 
     .navigation
@@ -107,3 +108,10 @@ header
 
       .title
         font-size: 24px
+
+@media(max-width: 330px)
+  header
+    .navigation
+      .logo
+        height: 30px
+        width: 220px

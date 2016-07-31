@@ -1,5 +1,7 @@
 $(function(){
   mobileMenu();
+  projectBelt();
+  projectLoad();
 });
 
 function mobileMenu(){
@@ -12,4 +14,29 @@ function mobileMenu(){
   		menulist.className = "hide";
   	}
   });
+}
+
+function projectBelt(){
+  $('.category-unit').click(function(){
+    $('.project-belt').css('left', '-100%');
+    $('.project-container').show();
+  });
+  $('.return-icon').click(function(){
+    $('.project-belt').css('left', '0%');
+    $('.project-container').hide();
+  });
+}
+
+function projectLoad(){
+  $.ajaxSetup({case:true });
+  $('.category-unit').click(function(){
+    var $this = $(this),
+        newTitle = $this.find('strong').text(),
+        newFile = $this.data('folder'),
+        newHTML = newFile + '.html';
+
+      $('.project-load').load(newHTML);
+      $('.project-title').text(newTitle);
+  });
+
 }

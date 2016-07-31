@@ -1,16 +1,24 @@
 .project-section
-  background-color: #ecf0f1
+  overflow: hidden
 
   h3
-    padding-top: 70px
-    padding-bottom: 20px
-    color: #2c3e50
+    color: #34495e
+    margin-top: 0
+    padding-top: 85px
+    padding-bottom: 50px
     text-align: center
+    text-transform: uppercase
+    letter-spacing: 5px
 
   .project-belt
-    width: 100%
+    width: 200%
+    position: relative
+    left: 0%
+    transition: 0.5s
 
-    .left-wrap
+    .left-wrap, .right-wrap
+      width: 50%
+      float: left
 
       .project-category
         max-width: 960px
@@ -26,6 +34,7 @@
           height: 0;
 
         .category-unit
+          cursor: pointer
           position: relative
           display: block
           float: left
@@ -50,7 +59,7 @@
             top: 100%
             right: 0
             left: 0
-            background: rgba(46, 204, 113,0.5)
+            background: rgba(36, 174, 218,0.5)
             height: 100%
             text-align: center
             transition: 0.8s
@@ -70,3 +79,52 @@
             top: 0%
             right: 0
             left: 0
+
+.project-container
+  position: relative
+  max-width: 600px
+  margin: 0px auto
+
+  h4
+    margin-top: 0px
+    color: #2c3e50
+    font-size: 24px
+    font-weight: 300
+    text-transform: uppercase
+
+  img
+    max-width: 100%
+
+  .return-icon
+    cursor: pointer
+    height: 40px
+    width: 40px
+    opacity: 0.3
+    position: absolute
+    left: -60px
+    bottom: 0px
+    top:-4px
+    right:0px
+
+    svg
+      height: 40px
+      width: 40px
+    path
+      fill: rgba(44, 62, 80,1.0)
+    &:hover
+      opacity: 1
+
+
+//responsive
+@media(max-width:800px)
+  .project-container
+
+    .return-icon
+      position: absolute
+      top:-5px
+      right: 0px
+      bottom: 0px
+      left: 0px
+
+    h4
+      margin-left: 60px
