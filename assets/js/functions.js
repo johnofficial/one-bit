@@ -28,7 +28,7 @@ function projectBelt(){
 }
 
 function projectLoad(){
-  $.ajaxSetup({case:true });
+  $.ajaxSetup({case:false });
   $('.category-unit').click(function(){
     var $this = $(this),
         newTitle = $this.find('strong').text(),
