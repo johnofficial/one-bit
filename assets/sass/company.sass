@@ -9,17 +9,23 @@
     text-transform: uppercase
     letter-spacing: 5px
 
-  .company-photo
+  .company-video
     justify-content: space-around
     margin-left: auto
     margin-right: auto
     margin-top: 40px
-    max-width: 700px
-    height: 300px
-    background:
-      image: url(../img/company-photo1.jpg)
-      size: cover
-      repeat: no-repeat
+    max-width: 100%
+    height: 500px
+    overflow: hidden
+
+    video
+      margin-left: auto
+      margin-right: auto
+      display: block
+      justify-content: space-around
+      height: 400px
+      max-width: 600px
+      overflow: hidden
 
   .company-description
     margin-left: auto
@@ -44,9 +50,12 @@
 @media(max-width: 450px)
   .company-section
 
-    .company-photo
-      margin-left: 10px
-      margin-right: 10px
+    .company-video
+      max-width: 100%
+
+      video
+        max-width: 100%
+        height: 300px
 
     .company-description
       margin-left: 10px
